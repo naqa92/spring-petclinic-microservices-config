@@ -93,3 +93,4 @@ spring:
     hibernate:
       ddl-auto: none
       dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: true
