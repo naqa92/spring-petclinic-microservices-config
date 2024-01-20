@@ -88,4 +88,8 @@ spring:
     init:
       schema-locations: classpath*:db/mysql/schema.sql
       data-locations: classpath*:db/mysql/data.sql
-    initialization-mode: always
+      init: always
+  jpa:
+    hibernate:
+      ddl-auto: none
+      dialect: org.hibernate.dialect.MySQLDialect
