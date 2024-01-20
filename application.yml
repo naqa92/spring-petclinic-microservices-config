@@ -86,6 +86,6 @@ spring:
     password: petclinic
   sql:
     init:
-      schema-locations: /home/vagrant/spring-petclinic-microservices/spring-petclinic-customers-service/src/main/resources/db/mysql/schema.sql
-      data-locations: /home/vagrant/spring-petclinic-microservices/spring-petclinic-customers-service/src/main/resources/db/mysql/data.sql
+      schema-locations: classpath*:db/mysql/schema.sql
+      data-locations: classpath*:db/mysql/data.sql
       init: always
